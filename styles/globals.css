@@ -15,12 +15,37 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.container{
+  width: 100%;
+  padding: 10px;
+  background: #0F111A;
+  color: white;
 }
+.title{
+  text-align: center;
+}
+.title > h1{
+  font-size: 42px;
+}
+.content-box{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  grid-row-gap:30px;
+}
+.content-box > .content-item{
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0 0 5px 1px white;
+}
+.content-item > img{
+  width:100%;
+  border-radius: 10px 10px 0 0;
+}
+
+
